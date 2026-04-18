@@ -4,6 +4,22 @@ The open source scoring algorithm powering [HumanLayer Protocol](https://humanla
 
 This package is a pure TypeScript library with **no database dependencies**. Pass in a history of score events, get back a total score, tier, and category breakdown.
 
+> **This is v1 of the algorithm.** Weights and categories will evolve based on real-world data and community input. We are already working on multi-source attestations and ZK proof integration for v2. See the [roadmap](#roadmap) below.
+
+---
+
+## Why we open sourced this
+
+Identity and reputation infrastructure should not be a black box. If apps and users are going to trust a score, they should be able to verify exactly how it was computed — not just read a number from an API.
+
+Open sourcing the scoring algorithm means:
+- Anyone can audit the weights and suggest improvements
+- The community can contribute new signal types
+- ZK proof integration becomes meaningful (apps can verify the computation, not just the output)
+- No hidden bias — every point is accounted for
+
+The algorithm will evolve. We are committed to doing that in public.
+
 ---
 
 ## How scoring works
@@ -151,6 +167,21 @@ Applies a delta to a score and clamps between 0 and 144.
 
 ---
 
+## Roadmap
+
+This is v1. Here's what's coming in v2:
+
+- **LinkedIn OAuth** — professional identity as an additional verification signal
+- **Farcaster attestations** — on-chain social graph signals
+- **POAP & ENS signals** — event attendance and name ownership
+- **ZK proof for score derivation** — apps will be able to independently verify a score was computed correctly, not just trust the output (via zkVerify integration)
+- **Score decay** — inactive identities decay over time to reflect current behavior
+- **Multi-source weighting** — dynamic weights adjusted based on real-world gaming patterns and community input
+
+Have a signal you think should be included? [Open an issue](https://github.com/humanlayerlabs/humanlayer-scoring/issues).
+
+---
+
 ## Contributing
 
 1. Fork the repo
@@ -168,7 +199,7 @@ All scoring changes must include updated tests. Tier threshold changes require d
 - Website: [humanlayer.network](https://humanlayer.network)
 - Twitter: [@HumanLayerlabs](https://twitter.com/HumanLayerlabs)
 - Discord: [discord.gg/vcfAMaWz6W](https://discord.gg/vcfAMaWz6W)
-- Email: [founders@humanlayer.network](mailto:info@humanlayer.network)
+- Email: [founders@humanlayer.network](mailto:founders@humanlayer.network)
 - Contract (Base Mainnet): [`0x6E5F0D5cCF7b42807b122D8D833A31132a57A29f`](https://basescan.org/address/0x6E5F0D5cCF7b42807b122D8D833A31132a57A29f)
 
 ---
