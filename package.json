@@ -19,7 +19,7 @@
     "base",
     "scoring"
   ],
-  "author": "HumanLayer Labs <founders@humanlayer.network>",
+  "author": "HumanLayer Labs <info@humanlayer.network>",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.0",
