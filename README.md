@@ -168,7 +168,7 @@ All scoring changes must include updated tests. Tier threshold changes require d
 - Website: [humanlayer.network](https://humanlayer.network)
 - Twitter: [@HumanLayerlabs](https://twitter.com/HumanLayerlabs)
 - Discord: [discord.gg/vcfAMaWz6W](https://discord.gg/vcfAMaWz6W)
-- Email: [founders@humanlayer.network](mailto:founders@humanlayer.network)
+- Email: [founders@humanlayer.network](mailto:info@humanlayer.network)
 - Contract (Base Mainnet): [`0x6E5F0D5cCF7b42807b122D8D833A31132a57A29f`](https://basescan.org/address/0x6E5F0D5cCF7b42807b122D8D833A31132a57A29f)
 
 ---
