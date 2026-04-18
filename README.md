@@ -169,16 +169,28 @@ Applies a delta to a score and clamps between 0 and 144.
 
 ## Roadmap
 
-This is v1. Here's what's coming in v2:
+This is v1. Here's what's coming in v2 (targeted for the next 2–4 months):
 
-- **LinkedIn OAuth** — professional identity as an additional verification signal
-- **Farcaster attestations** — on-chain social graph signals
-- **POAP & ENS signals** — event attendance and name ownership
-- **ZK proof for score derivation** — apps will be able to independently verify a score was computed correctly, not just trust the output (via zkVerify integration)
-- **Score decay** — inactive identities decay over time to reflect current behavior
-- **Multi-source weighting** — dynamic weights adjusted based on real-world gaming patterns and community input
+**New verification signals**
+- **LinkedIn OAuth** — professional identity and work history as a high-confidence signal
+- **Farcaster attestations** — on-chain social graph and engagement signals
+- **POAP + ENS signals** — event participation and long-term name ownership
+- **Additional Web2/Web3 signals** *(under exploration: Discord, X/Twitter verified, Gitcoin Passport stamps)*
 
-Have a signal you think should be included? [Open an issue](https://github.com/humanlayerlabs/humanlayer-scoring/issues).
+**Core algorithm upgrades**
+- **Full ZK proofs for score derivation** — apps can independently verify a score was computed correctly, not just trust the output (via [zkVerify](https://zkverify.io) integration)
+- **Score decay mechanism** — inactive or low-activity identities gradually lose score to reflect current behavior
+- **Advanced multi-source weighting** — dynamic and adaptive weights based on real-world performance, gaming attempts, and community input
+- **Input pipeline attestations** — ZK proofs for individual data sources where possible
+
+**Ecosystem & composability**
+- **Revocation / challenge mechanism** — community or app-level ability to flag and dispute suspicious identities
+- **Composable credentials / selective disclosure** — share specific score attributes (e.g. "Developer Tier > 80" or "Active since 2024") without revealing the full score
+- **Developer SDK v2** — easier integration tools with examples for DAOs, airdrop platforms, and social apps
+- **Cross-chain expansion** — support for Optimism, Arbitrum, and other L2s
+- **On-chain governance for parameter tuning** — DAO-based voting to adjust weights and add new signals
+
+**Community-driven:** Have a signal or feature you think should be included? [Open an issue](https://github.com/humanlayerlabs/humanlayer-scoring/issues) — top suggestions will be prioritized.
 
 ---
 
@@ -199,7 +211,7 @@ All scoring changes must include updated tests. Tier threshold changes require d
 - Website: [humanlayer.network](https://humanlayer.network)
 - Twitter: [@HumanLayerlabs](https://twitter.com/HumanLayerlabs)
 - Discord: [discord.gg/vcfAMaWz6W](https://discord.gg/vcfAMaWz6W)
-- Email: [founders@humanlayer.network](mailto:founders@humanlayer.network)
+- Email: [founders@humanlayer.network](mailto:info@humanlayer.network)
 - Contract (Base Mainnet): [`0x6E5F0D5cCF7b42807b122D8D833A31132a57A29f`](https://basescan.org/address/0x6E5F0D5cCF7b42807b122D8D833A31132a57A29f)
 
 ---
