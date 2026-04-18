@@ -19,3 +19,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Additional Notice:
+
+This repository contains the open-source scoring algorithm (v1) for the HumanLayer Protocol.
+While the algorithm is fully open under MIT, the official HumanLayer implementation on Base may evolve over time based on real-world data, security considerations, and community feedback.
+
+## Important Notes
+
+- This is **v1** of the scoring algorithm.
+- We strongly encourage auditing, feedback, and contributions.
+- The official deployed version on Base may diverge in the future as we add multi-source attestations and ZK proofs.
+- Using this algorithm in your own projects is allowed and encouraged, but claiming to be "HumanLayer" or using our branding is not.
